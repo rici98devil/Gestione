@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="Gestione.Properties.Settings.Gestione_CalibriConnectionString"
+            connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=&quot;c:\Calibri\Gestione Calibri.mdb&quot;"
+            providerName="System.Data.OleDb" />
+        <add name="Gestione.Properties.Settings.AnagraficaConnectionString"
+            connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\Database1.mdb"
+            providerName="System.Data.OleDb" />
+        <add name="Gestione.Properties.Settings.DatabaseConnectionString"
+            connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\locat\Documents\Database1.mdb"
+            providerName="System.Data.OleDb" />
+        <add name="Gestione.Properties.Settings.Database1ConnectionString"
+            connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Calibri\Database1.mdb"
+            providerName="System.Data.OleDb" />
+    </connectionStrings>
+    <startup> 
+        
+    <supportedRuntime version="v2.0.50727"/></startup>
+</configuration>
