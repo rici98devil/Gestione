@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
-            this.calibri_LisciDataSet = new Gestione.Calibri_LisciDataSet();
-            this.calibr_LisciBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.calibr_LisciTableAdapter = new Gestione.Calibri_LisciDataSetTableAdapters.Calibr_LisciTableAdapter();
-            this.tableAdapterManager = new Gestione.Calibri_LisciDataSetTableAdapters.TableAdapterManager();
             this.calibr_LisciBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -55,32 +51,16 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.calibri_LisciDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.calibr_LisciBindingSource)).BeginInit();
+            this.calibr_LisciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.calibri_LisciDataSet = new Gestione.Calibri_LisciDataSet();
+            this.calibr_LisciTableAdapter = new Gestione.Calibri_LisciDataSetTableAdapters.Calibr_LisciTableAdapter();
+            this.tableAdapterManager = new Gestione.Calibri_LisciDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.calibr_LisciBindingNavigator)).BeginInit();
             this.calibr_LisciBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.calibr_LisciDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calibr_LisciBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calibri_LisciDataSet)).BeginInit();
             this.SuspendLayout();
-            // 
-            // calibri_LisciDataSet
-            // 
-            this.calibri_LisciDataSet.DataSetName = "Calibri_LisciDataSet";
-            this.calibri_LisciDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // calibr_LisciBindingSource
-            // 
-            this.calibr_LisciBindingSource.DataMember = "Calibr Lisci";
-            this.calibr_LisciBindingSource.DataSource = this.calibri_LisciDataSet;
-            // 
-            // calibr_LisciTableAdapter
-            // 
-            this.calibr_LisciTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Calibr_LisciTableAdapter = this.calibr_LisciTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Gestione.Calibri_LisciDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // calibr_LisciBindingNavigator
             // 
@@ -266,6 +246,26 @@
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.Visible = false;
             // 
+            // calibr_LisciBindingSource
+            // 
+            this.calibr_LisciBindingSource.DataMember = "Calibr Lisci";
+            this.calibr_LisciBindingSource.DataSource = this.calibri_LisciDataSet;
+            // 
+            // calibri_LisciDataSet
+            // 
+            this.calibri_LisciDataSet.DataSetName = "Calibri_LisciDataSet";
+            this.calibri_LisciDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // calibr_LisciTableAdapter
+            // 
+            this.calibr_LisciTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Calibr_LisciTableAdapter = this.calibr_LisciTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Gestione.Calibri_LisciDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,12 +281,12 @@
             this.Text = "Calibri Lisci";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form5_FormClosing);
             this.Load += new System.EventHandler(this.Form5_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.calibri_LisciDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.calibr_LisciBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.calibr_LisciBindingNavigator)).EndInit();
             this.calibr_LisciBindingNavigator.ResumeLayout(false);
             this.calibr_LisciBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.calibr_LisciDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calibr_LisciBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calibri_LisciDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -73,8 +73,6 @@ namespace Gestione
                     if (gestioneCalibriDataGridView.Rows[i].Cells[3].Value.ToString() != "")
                     {
                         DateTime data6 = DateTime.Parse(gestioneCalibriDataGridView.Rows[i].Cells[3].Value.ToString());
-
-
                         TimeSpan data5 = date3.Subtract(data6);
                         Double data7 = data5.TotalDays;
                         int risp = Int32.Parse(gestioneCalibriDataGridView.Rows[i].Cells[4].Value.ToString());
@@ -1020,16 +1018,13 @@ namespace Gestione
                 {
                     cancellaFiltroToolStripMenuItem.Visible = false;
                 }
-
-
-
+                
             }
         }
 
         private void tabControl2_Selected(object sender, TabControlEventArgs e)
         {
             Selezione(e.TabPageIndex);
-
 
         }
         private void Selezione(int sel)
